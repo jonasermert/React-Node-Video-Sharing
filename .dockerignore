@@ -1,0 +1,53 @@
+# Git
+.git
+.gitignore
+.gitattributes
+
+# Dependencies
+node_modules
+client/node_modules
+server/node_modules
+
+# Build
+client/dist
+server/dist
+dist
+coverage
+.vite
+client/.vite
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Environment
+.env
+.env.*
+!.env.example
+
+client/.env
+client/.env.*
+!client/.env.example
+
+server/.env
+server/.env.*
+!server/.env.example
+
+# Uploaded files
+server/uploads/*
+!server/uploads/.gitkeep
+
+# Database files
+database/data
+
+# IDE
+.idea
+.vscode
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db

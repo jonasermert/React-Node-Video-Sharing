@@ -1,0 +1,72 @@
+# ==========================================
+# Git Attributes
+# ==========================================
+
+# Automatically detect text files and normalize line endings
+* text=auto
+
+# ------------------------------------------
+# Source Code
+# ------------------------------------------
+*.js          text eol=lf
+*.mjs         text eol=lf
+*.cjs         text eol=lf
+*.ts          text eol=lf
+*.vue         text eol=lf
+*.css         text eol=lf
+*.scss        text eol=lf
+*.html        text eol=lf
+*.json        text eol=lf
+*.yml         text eol=lf
+*.yaml        text eol=lf
+*.md          text eol=lf
+*.sql         text eol=lf
+*.env.example text eol=lf
+*.sh          text eol=lf
+
+# Windows batch files
+*.bat         text eol=crlf
+*.cmd         text eol=crlf
+*.ps1         text eol=crlf
+
+# ------------------------------------------
+# Binary Files
+# ------------------------------------------
+*.png         binary
+*.jpg         binary
+*.jpeg        binary
+*.gif         binary
+*.webp        binary
+*.ico         binary
+*.svg         text
+
+*.mp4         binary
+*.mov         binary
+*.avi         binary
+*.mkv         binary
+*.webm        binary
+
+*.pdf         binary
+*.zip         binary
+*.gz          binary
+*.7z          binary
+*.rar         binary
+
+*.woff        binary
+*.woff2       binary
+*.ttf         binary
+*.otf         binary
+
+# ------------------------------------------
+# Executables
+# ------------------------------------------
+*.exe         binary
+*.dll         binary
+*.so          binary
+*.dylib       binary
+
+# ------------------------------------------
+# Docker
+# ------------------------------------------
+Dockerfile    text eol=lf
+*.dockerignore text eol=lf

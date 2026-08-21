@@ -1,0 +1,46 @@
+{
+  "name": "react-node-video-sharing",
+  "version": "1.0.0",
+  "description": "A full-stack video sharing application built with React, TypeScript, Node.js, Express, MySQL and Tailwind CSS.",
+  "private": true,
+  "license": "MIT",
+  "author": "Jonas Ermert",
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "engines": {
+    "node": ">=20",
+    "npm": ">=10"
+  },
+  "scripts": {
+    "install:all": "npm install --workspaces --include-workspace-root",
+    "dev": "concurrently \"npm run dev -w server\" \"npm run dev -w client\"",
+    "build": "npm run build -w client",
+    "start": "npm run start -w server",
+    "test": "npm run test -w server",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "db:start": "docker compose up -d mysql",
+    "db:stop": "docker compose stop mysql",
+    "db:restart": "docker compose restart mysql",
+    "db:logs": "docker compose logs -f mysql",
+    "db:reset": "docker compose down -v",
+    "docker:up": "docker compose up --build",
+    "docker:down": "docker compose down",
+    "docker:restart": "docker compose down && docker compose up --build",
+    "docker:logs": "docker compose logs -f",
+    "check:updates": "ncu --deep",
+    "update:packages": "ncu --deep -u",
+    "audit": "npm audit",
+    "audit:fix": "npm audit fix"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "concurrently": "^9.1.2",
+    "eslint": "^10.7.0",
+    "globals": "^17.7.0",
+    "npm-check-updates": "^22.2.9",
+    "prettier": "^3.6.2"
+  }
+}

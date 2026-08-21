@@ -1,0 +1,51 @@
+# Dependencies
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Build output
+client/dist/
+server/dist/
+dist/
+coverage/
+
+# Vite cache
+.vite/
+client/.vite/
+
+# Runtime data
+server/uploads/
+server/data/
+
+# Environment files
+.env
+.env.*
+client/.env
+client/.env.*
+server/.env
+server/.env.*
+
+# Lock files
+package-lock.json
+client/package-lock.json
+server/package-lock.json
+
+# Docker volumes and local data
+mysql_data/
+database/data/
+
+# IDE files
+.idea/
+.vscode/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*

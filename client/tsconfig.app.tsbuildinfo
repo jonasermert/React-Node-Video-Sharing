@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/main.tsx","./src/router.tsx","./src/types.ts","./src/vite-env.d.ts","./src/components/authform.tsx","./src/store/auth.ts","./src/views/capture.tsx","./src/views/home.tsx","./src/views/login.tsx","./src/views/publicvideo.tsx","./src/views/register.tsx","./src/views/videoedit.tsx","./src/views/videos.tsx"],"version":"5.9.3"}
